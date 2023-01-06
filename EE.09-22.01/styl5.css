@@ -1,0 +1,41 @@
+body{
+    font-family: Tahoma;
+}
+#baner1,#baner2
+{
+    background-color: #003d33;
+    color: white;
+    text-align: center;
+    height: 50px;
+    float: left;
+}
+#baner1{
+    width: 70%;
+}
+#baner2{
+    width: 30%;
+}
+#lewy{
+    background-color: #26a69a;
+    height: 550px;
+    width: 30%;
+    float: left;
+}
+#prawy{
+    background-color: #26a69a;
+    height: 550px;
+    width: 70%;
+    float: left;
+}
+#stopka{
+    background-color: #003d33;
+    color: white;
+}
+#wizytowka{
+    width: 400px;
+    margin: 30px;
+    text-align: center;
+    border: 1px;
+    border-style: solid;
+    border-color: #003d33;
+}

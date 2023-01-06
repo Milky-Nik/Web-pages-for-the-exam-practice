@@ -1,0 +1,57 @@
+body
+{
+    font-family: Georgia;
+}
+
+#calosc
+{
+    height:100%;
+    width: 100%;
+    background-color: #67d484;
+}
+
+#flexbox
+{
+    display: flex;
+}
+
+#baner_nazwa
+{
+    background-color: #3CB371;
+    width: 40%;
+    height: 100px;
+}
+
+#baner_wydarzenia
+{
+    background-color: #3CB371;
+    width: 40%;
+    height: 100px;
+}
+
+#baner_obraz
+{
+    background-color: #3CB371;
+    width: 20%;
+    height: 100px;  
+}
+
+#block
+{
+    background-color: #FFDAB9;
+    width: 170px;
+    height: 90px;
+    margin: 5px;
+    outline-color: #3CB371;
+    outline-style: solid;
+    float: left;
+}
+
+#stopka
+{
+    background-color: #3CB371;
+    width: 100%;
+    height: 60px;
+    float: left;
+    color: white;
+}

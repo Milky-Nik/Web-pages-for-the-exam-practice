@@ -1,0 +1,60 @@
+<!doctype html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <link rel="stylesheet" href="styl2.css">
+    </head>
+
+    <script>
+        function zmienfont(colorr){
+            var fontweight = document.getElementById('rozmiar').value;
+            document.getElementById('zmien').style="font-size: " + fontweight + "%;";
+            document.getElementById('zmien').style.color = colorr;
+            if(document.getElementById('opt').value == 'kursywna')
+            document.getElementById('zmien').style.fontStyle = 'italic';
+        }
+    </script>
+
+    <body>
+        <div id="baner"><h1>Formatowanie dokumentów HTML</h1></div>
+        <div id="panelgorny1"><h2>Przykład listy - hobby</h2>
+        <ul type="square">
+            <li>muzyka</li>
+            <li>turystyka</li>
+            <ol><li>gora</li><li>jeziora</li><li>na rowerze</li></ol>
+            <li>ksiazki</li>
+        </ul></div>
+        <div id="panelgorny2"><h2>Przykład tabeli - rozkład dnia</h2>
+        <table>
+            <tr><th>Pora dnia</th><th>obowiązki</th></tr>
+            <tr><td>rano</td><td>nauka</td></tr>
+            <tr><td>południe</td><td>zajęcia dodatkowe</td></tr>
+            <tr><td>popołudnie</td><td rowspan="2">moje hobby</td></tr>
+            <tr><td>wieczór</td></tr>
+        </table>
+    </div>
+        <div id="panelgorny3"><img src="napisy.png" alt="technologia web"></div>
+        <div id="panelglowny">
+            <p>Podaj rozmiar tekstu w procentach:
+                <input type="number" id="rozmiar">%</p><br>
+            <p><select id ="opt">
+                <option value="prosty">prosty</option>
+                <option value="kursywna">kursywa</option>
+            </select></p>
+            <p>Jakim kolorem sformatować tekst? Wybierz przycisk<br>
+                <input type="button" id="button_red"
+                onclick="zmienfont('red');">
+                <input type="button" id="button_green"
+                onclick="zmienfont('green');">
+                <input type="button" id="button_blue"
+                onclick="zmienfont('blue');">
+            </p>
+            <p id="zmien">To jest przykład paragrafu, który może być dowolnie formatowany przez JavaScript</p>
+        </div>
+        <div id="stopka">
+            <p><i>Formatowaniem tekstu zajmował się: 123123123123</i><br>
+            <a href="formatowanie.pl" target="_blank">Odwiedż także</a></p>
+        </div>
+    </body>
+    
+</html>

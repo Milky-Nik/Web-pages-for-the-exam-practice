@@ -1,0 +1,44 @@
+<!doctype html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Wskaznik jakosci hasla</title>
+        <link rel="stylesheet" href="styl2.css">
+    </head>
+    <body>
+        <div id="baner">
+            <a href="index.html"><h1>Werifikacja jakosci hasla</h1></a>
+        </div>
+        <div id="lewy">
+            <h2>Wybierz opcje</h2><br>
+            <ul>
+                <li><a href="sprawdz.html">Sprawdż hasło</a></li>
+                <li><a href="reguly.html">Reguly stworzenia hasla</a></li>
+            </ul>
+        </div>
+        <div id="prawy">
+            <p>Wpisz hasło:<input type="password" id="pass"><input type="button" value="Weryfikuj" onclick="f()"></p><br>
+        </div>
+        <div id="stopka">
+            <h3>Wskaźnik jakości hasła</h3><br>
+            <p>Twórca strony: 129873410987298471298</p>
+        </div>
+    </body>
+    <script>
+        function f(){
+            var haslo = document.getElementById("pass").value;
+            if(haslo == ""){
+                document.getElementById("prawy").innerHTML += '<p style="color: red;">HASŁO JEST PUSTE</p>';
+            }
+            else if(haslo.length >= 7 && /\d/.test(haslo)){
+                document.getElementById("prawy").innerHTML += '<p style="color: green;">HASŁO JEST DOBRE</p>';
+            }
+            else if(haslo.length >= 4 && haslo.length <= 6 && /\d/.test(haslo)){
+                document.getElementById("prawy").innerHTML += '<p style="color: blue;">HASŁO JEST ŚREDNIE</p>';
+            }
+            else{
+                document.getElementById("prawy").innerHTML += '<p style="color: yellow;">HASŁO JEST SŁABE</p>';
+            }
+        }
+    </script>
+</html>

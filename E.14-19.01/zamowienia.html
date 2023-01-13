@@ -1,0 +1,45 @@
+<!doctype html>
+<html>
+    <head>
+        <title>Hurtownia</title>
+        <meta charset="utf-8">
+        <link rel="stylesheet" href="styl4.css">
+    </head>
+    <body>
+        
+        <div id="logo"><img src="logo2.png" alt="hurtownia"></div>
+        <div id="menu"><a href="index.html">Strona Glowna</a><a href="zamowienia.html">Zamowienia</a><a href="blog.html">Blog o kawie</a><a href="http://gatunki-kawy.pl/" target="_blank">Odwiedź także</a></div>
+        <div id="baner"><h1>Hurtownia kawy</h1></div>
+        <div id="lewy"><h2>Oferta</h2><ol><li>Kawa palona Arabica</li><li>Kawa palona Robusta</li><li>Kawa bezkofeinową</li><li>Kawa zielona</li></ol></div>
+        <div id="prawy">Podaj numer kawy:<br>
+        <input type="number" name="kawa"><br>
+        Podaj wagę w dekagramach<br>
+        <input type="number" name="waga"><br>
+        <input type="button" value="wyslij" name="sub" OnClick="submt()"><br>
+        </div>
+        <div id="stopka">Strone przygotowal:82736366363662627</div>
+    </body>
+    <script>
+            var kawanum;
+            var waga;
+            var result;
+        function submt()
+        {
+            kawanum = document.getElementsByName("kawa")[0].value;
+            waga = document.getElementsByName("waga")[0].value;
+            if(kawanum==1){
+                result = 5 * waga;
+            }
+            else if(kawanum==2){
+                result = 6 * waga;
+            }
+            else if(kawanum==3){
+                result = 7 * waga;
+            }
+            else{
+                result = 0;
+            }
+         document.getElementById("prawy").innerHTML +="Koszt zamowienia wynosi: " + result + "zl.";
+        }
+    </script>
+</html>

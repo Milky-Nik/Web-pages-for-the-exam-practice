@@ -1,0 +1,39 @@
+#baner{
+    background-color: #40271A;
+    color: white;
+    font-family: Tahoma;
+    text-align: center;
+    height: 80px;
+}
+#lewy{
+    background-color: #DBB29C;
+    width: 40%;
+    height: 700px;
+    float: left;
+}
+#prawy{
+    background-color: #FFE3D4;
+    width: 60%;
+    height: 700px;
+    float: left;
+}
+#stopka{
+    background-color: #40271A;
+    color: white;
+    text-align: right;
+    clear: both;
+}
+table{
+    border: 1px brown;
+    border-style: dotted;
+}
+td{
+    border: 1px brown;
+    border-style: dotted;
+    width: 500px;
+    margin: 10px;
+    text-align: center;
+}
+img{
+    margin: 30px;
+}

@@ -1,0 +1,49 @@
+*{
+    font-family: Helvetica;
+}
+body{
+    width: 100%;
+}
+#lewo{
+    background-color: navy;
+    color: white;
+    width: 25%;
+    height: 700px;
+    float: left;
+}
+#panel1{
+    background-color: royalblue;
+    height: 100px;
+    width: 75%;
+    text-align: center;
+    float: left;
+}
+#panel2{
+    background-color: steelblue;
+    height: 300px;
+    width: 75%;
+    float: left;
+}
+#panel3{
+    background-color: royalblue;
+    height: 300px;
+    width: 75%;
+    text-align: center;
+    float: left;
+}
+#stopka{
+    background-color: steelblue;
+    text-align: center;
+    padding: 20px;
+    clear: both;
+}
+h1{
+    letter-spacing: 5px;
+}
+form{
+    padding: 30px;
+    line-height: 3;
+}
+form:hover{
+    background-color: deepskyblue;
+}
